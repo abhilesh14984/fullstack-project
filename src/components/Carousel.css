@@ -1,0 +1,56 @@
+.carousel-container {
+  width: 80%;
+  margin: auto;
+  position: relative; /* Ensure the container is positioned relative for absolute positioning of arrows */
+}
+
+.slick-arrow {
+  z-index: 1;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for centering */
+  font-size: 2em;
+  color: white;
+  position: absolute;
+}
+
+.slick-arrow.next {
+  right: 10px;
+  color: black;
+}
+
+.slick-arrow.prev {
+  left: 10px;
+  color: #000;
+}
+
+.carousel-slide {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 400px; /* Adjust height as needed */
+  background-size: contain; /* Ensure entire image fits within the container */
+  background-position: center;
+  background-color: rgb(238, 238, 236);
+  position: relative;
+}
+
+.slide-content {
+  color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center; /* Center text */
+}
+
+.explore-button {
+  background-color: #25282d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.explore-button:hover {
+  background-color: #0056b3;
+}
